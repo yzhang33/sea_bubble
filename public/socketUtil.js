@@ -1,13 +1,12 @@
-let roles = ["./assets/basketball.png",
-"./assets/cabinte.png",
-"./assets/capet.png",
-"./assets/clock.png",
-"./assets/curtain.png",
-"./assets/flowerRing.png",
-"./assets/gifts.png",
-"./assets/lamp.png",
-"./assets/laptop.png",
-"./assets/plant.png"]
+let roles = ["./assets/fish-02.png",
+"./assets/fish-03.png",
+"./assets/fish-04.png",
+"./assets/fish-05.png",
+"./assets/fish1.png",
+"./assets/fish2.png",
+"./assets/fish3.png",
+"./assets/fish4.png",
+"./assets/fish5.png"]
 
 //connection to server
 let socket = io.connect('http://localhost:8080');
