@@ -44,7 +44,6 @@ setInterval(()=>{
     }
 },33);//update users information every 30fps
 
-
 io.sockets.on('connect',(socket)=>{
     let user = {};
     socket.on('init',(data)=>{
@@ -58,10 +57,10 @@ io.sockets.on('connect',(socket)=>{
         user = new User(socket.id,userData);
         users.push(user);
         //testing purpose delete later
-        if(users.length == 1){
-            user.userData.identity = "cop";
-            settings.copChosen = true;
-        }
+        // if(users.length == 1){
+        //     user.userData.identity = "cop";
+        //     settings.copChosen = true;
+        // }
         //
         //send dummy data when connected
         socket.emit('initReturn', {
