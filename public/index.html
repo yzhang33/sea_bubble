@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dodge Bullets</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+   <div id="board-container">
+       <div id="board-field" class="col-sm-0">
+           <canvas id="game-canvas" class="hiddenOnstart"></canvas>
+        </div>
+        <div id="images" style="display:none;">
+            <img id="bkj" src="assets/background.jpg">
+            <img id="cop" src="assets/ship.png">
+        </div>
+        <audio id="backgroundMusic" src="assets/water.mp3"></audio>
+        <audio id="bubble" src="assets/bubble.mp3"></audio>
+   </div>
+   <!-- Modals -->
+   <!-- Log in modals -->
+   <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title text-center">User Log In</h2>
+            </div>
+            <div class="modal-body">
+                <form class="name-form">
+                    <div class="text-center error-message"></div>
+                    <button type="submit" class="btn login-button login-guest">Login as Guest</button>
+                    <input id="name-input" class="text-input text-center form-control" type="text" name="name-input" placeholder="Enter your name here" required>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div id="instructions">
+                    <label id="how-to-rules">Rules:</label>
+                    <ul>
+                        <li>Nice Aqua Evironment.</li>
+                        <li>Do nothing or move.</li>
+                        <li>One person will be your bubble generator.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="UiEntry.js"></script>
+<script src="socketUtil.js"></script>
+<script src="canvasUtil.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+{
+  "name": "dodge_bullets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzhang33/Dodge_Bullets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzhang33/Dodge_Bullets/issues"
+  },
+  "homepage": "https://github.com/yzhang33/Dodge_Bullets#readme",
+  "dependencies": {
+    "express": "^4.18.0",
+    "helmet": "^5.0.2",
+    "https": "^1.0.0",
+    "socketio": "^1.0.0"
+  }
+}
